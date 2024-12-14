@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="800" height="200" viewBox="0 0 800 200" xmlns="http://www.w3.org/2000/svg">
+    <!-- 背景のグラデーション定義 -->
+    <defs>
+        <linearGradient id="headerGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" style="stop-color:#4a90e2;stop-opacity:1">
+                <animate attributeName="stop-color" values="#4a90e2;#81c3fd;#4a90e2" dur="10s" repeatCount="indefinite"/>
+            </stop>
+            <stop offset="100%" style="stop-color:#81c3fd;stop-opacity:1">
+                <animate attributeName="stop-color" values="#81c3fd;#4a90e2;#81c3fd" dur="10s" repeatCount="indefinite"/>
+            </stop>
+        </linearGradient>
+        <!-- テキストのグラデーション -->
+        <linearGradient id="textGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+            <stop offset="0%" style="stop-color:#ffffff;stop-opacity:1"/>
+            <stop offset="100%" style="stop-color:#f0f0f0;stop-opacity:1"/>
+        </linearGradient>
+    </defs>
+
+    <!-- 角丸の背景 -->
+    <rect x="10" y="10" width="780" height="180" rx="20" ry="20" fill="url(#headerGradient)">
+        <animate attributeName="opacity" values="0.9;1;0.9" dur="5s" repeatCount="indefinite"/>
+    </rect>
+
+    <!-- メインテキスト -->
+    <text x="400" y="110" font-family="Arial, sans-serif" font-size="48" font-weight="bold" fill="url(#textGradient)" text-anchor="middle">
+        Roo Example Project
+        <animate attributeName="y" values="110;105;110" dur="3s" repeatCount="indefinite"/>
+    </text>
+
+    <!-- サブテキスト -->
+    <text x="400" y="140" font-family="Arial, sans-serif" font-size="20" fill="#ffffff" text-anchor="middle" opacity="0.8">
+        Innovative Solutions for Modern Development
+        <animate attributeName="opacity" values="0.8;1;0.8" dur="4s" repeatCount="indefinite"/>
+    </text>
+
+    <!-- 装飾的な要素 -->
+    <circle cx="700" cy="50" r="20" fill="#ffffff" opacity="0.2">
+        <animate attributeName="r" values="20;25;20" dur="3s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="100" cy="150" r="15" fill="#ffffff" opacity="0.2">
+        <animate attributeName="r" values="15;20;15" dur="4s" repeatCount="indefinite"/>
+    </circle>
+</svg>
